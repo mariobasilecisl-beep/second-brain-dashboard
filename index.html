@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Second Brain — FNP CISL Palermo Trapani</title>
+  <style>
+    :root { --navy:#17365d; --blue:#2f75b5; --pale:#d9eaf7; --ink:#1f2937; --muted:#5b6573; --line:#d5e1ef; --amber:#fff2cc; --bg:#f7fafc; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--ink); font-family:Arial,Helvetica,sans-serif; }
+    main { max-width:980px; margin:0 auto; padding:28px 20px 48px; }
+    h1 { margin:0; color:var(--navy); font-size:28px; }
+    .subtitle { margin:7px 0 24px; color:var(--muted); font-style:italic; }
+    .section-title { margin:26px 0 12px; padding:8px 10px; background:var(--pale); color:var(--navy); font-weight:700; font-size:14px; letter-spacing:.02em; }
+    .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+    .card { background:#fff; border:1px solid #bcd3ec; padding:17px; text-align:center; }
+    .card strong { display:block; color:var(--navy); font-size:15px; }
+    .number { display:block; margin-top:10px; color:var(--blue); font-size:30px; font-weight:700; }
+    .steps { width:100%; border-collapse:collapse; background:#fff; border:1px solid var(--line); }
+    .steps th { width:44px; background:var(--navy); color:#fff; font-size:16px; }
+    .steps td { padding:12px; border-bottom:1px solid var(--line); vertical-align:top; }
+    .steps tr:last-child td, .steps tr:last-child th { border-bottom:none; }
+    .steps td:first-of-type { width:140px; color:var(--navy); font-weight:700; }
+    table.data { width:100%; border-collapse:collapse; background:#fff; }
+    .data th { background:var(--navy); color:#fff; padding:9px; text-align:left; font-size:14px; }
+    .data td { padding:9px; border-bottom:1px solid var(--line); }
+    .data td:nth-child(3) { text-align:right; font-variant-numeric:tabular-nums; }
+    .note { margin:0; padding:10px; background:var(--amber); color:#7f6000; font-size:14px; font-style:italic; }
+    .use { margin-top:23px; color:var(--muted); font-style:italic; }
+    .links { display:flex; flex-wrap:wrap; gap:10px; margin-top:18px; }
+    .links a { color:var(--navy); background:#fff; border:1px solid #bcd3ec; padding:9px 12px; text-decoration:none; font-weight:700; }
+    .links a:hover, .links a:focus { background:var(--pale); }
+    .sources { list-style:none; padding:0; margin:0; background:#fff; border:1px solid var(--line); }
+    .sources li { display:flex; align-items:center; gap:12px; padding:11px 12px; border-bottom:1px solid var(--line); }
+    .sources li:last-child { border-bottom:none; }
+    .source-main { flex:1; }
+    .source-main strong { display:block; color:var(--navy); }
+    .source-main span { color:var(--muted); font-size:13px; }
+    .open { color:var(--navy); border:1px solid #bcd3ec; padding:7px 10px; text-decoration:none; font-weight:700; white-space:nowrap; }
+    .open:hover, .open:focus { background:var(--pale); }
+    @media (max-width:620px) { main { padding:20px 14px 36px; } h1 { font-size:23px; } .cards { grid-template-columns:1fr; } .steps td:first-of-type { width:100px; } .data th, .data td { padding:7px; font-size:13px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Second Brain — FNP CISL Palermo Trapani</h1>
+    <p class="subtitle">Dashboard operativa · dati e registri aggiornabili · 4 ottobre 2026</p>
+
+    <div class="section-title">PANORAMICA</div>
+    <section class="cards" aria-label="Riepilogo">
+      <div class="card"><strong>Fonti verificate</strong><span class="number">15</span></div>
+      <div class="card"><strong>Attività in corso</strong><span class="number">0</span></div>
+      <div class="card"><strong>Progetti attivi</strong><span class="number">0</span></div>
+    </section>
+
+    <div class="section-title">PROSSIMI PASSI</div>
+    <table class="steps" aria-label="Come iniziare">
+      <tbody>
+        <tr><th scope="row">1</th><td>Fonti</td><td>Aggiungi solo fonti ufficiali o verificabili nel registro Fonti.</td></tr>
+        <tr><th scope="row">2</th><td>Attività</td><td>Registra ogni riunione, appuntamento, tavolo o iniziativa.</td></tr>
+        <tr><th scope="row">3</th><td>Progetti</td><td>Apri un progetto e indica sempre la prossima azione concreta e la scadenza.</td></tr>
+        <tr><th scope="row">4</th><td>Territorio</td><td>Inserisci numeri solo se accompagnati da periodo e fonte.</td></tr>
+      </tbody>
+    </table>
+
+    <div class="section-title">DATI TERRITORIALI GIÀ REGISTRATI</div>
+    <table class="data" aria-label="Dati territoriali">
+      <thead><tr><th>Territorio</th><th>Indicatore</th><th>Valore</th><th>Periodo</th></tr></thead>
+      <tbody>
+        <tr><td>Palermo</td><td>Popolazione residente</td><td>628.693</td><td>31 dicembre 2024</td></tr>
+        <tr><td>Trapani</td><td>Popolazione residente</td><td>Da verificare</td><td>—</td></tr>
+      </tbody>
+    </table>
+    <p class="note">Per Trapani manca ancora una fonte ISTAT comunale aggiornata: non è stato inserito un valore approssimativo.</p>
+
+    <div class="section-title">FONTI UFFICIALI</div>
+    <ul class="sources" aria-label="Fonti ufficiali verificate">
+      <li><div class="source-main"><strong>Statuto FNP CISL</strong><span>FNP CISL · Organizzazione</span></div><a class="open" href="https://pensionati.cisl.it/pdf/statuto.pdf">Apri</a></li>
+      <li><div class="source-main"><strong>FNP CISL</strong><span>FNP CISL · Pagina istituzionale</span></div><a class="open" href="https://www.pensionati.cisl.it/fnp-cisl">Apri</a></li>
+      <li><div class="source-main"><strong>Sedi FNP CISL</strong><span>FNP CISL · Pagina istituzionale</span></div><a class="open" href="https://www.pensionati.cisl.it/sedi">Apri</a></li>
+      <li><div class="source-main"><strong>Statuto CISL Confederale 2022</strong><span>CISL · Organizzazione</span></div><a class="open" href="https://www.cisl.it/wp-content/uploads/2022/10/Statuto-CISL-Confederale_2022.pdf">Apri</a></li>
+      <li><div class="source-main"><strong>Congresso CISL Palermo Trapani</strong><span>CISL · Territorio</span></div><a class="open" href="https://www.cisl.it/mezzogiorno-fumarola-al-congresso-della-cislpalermo-trapani-sviluppo-e-coesione-sono-e-restano-la-nostra-bussola-primo-maggio-in-sicilia-per-costruire-una-nuova-e-grande-alleanza-sociale-a-cominc/">Apri</a></li>
+      <li><div class="source-main"><strong>Pensione di vecchiaia</strong><span>INPS · Pensioni</span></div><a class="open" href="https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.pensione-di-vecchiaia.html">Apri</a></li>
+      <li><div class="source-main"><strong>Pensione ai superstiti</strong><span>INPS · Pensioni</span></div><a class="open" href="https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.pensione-ai-superstiti-indiretta-e-di-reversibilit--50605.pensione-ai-superstiti-indiretta-e-di-reversibilit-.html">Apri</a></li>
+      <li><div class="source-main"><strong>Indennità di accompagnamento</strong><span>INPS · Non autosufficienza</span></div><a class="open" href="https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.indennit-di-accompagnamento-agli-invalidi-civili.html">Apri</a></li>
+      <li><div class="source-main"><strong>Assessorato Famiglia, Politiche sociali e Lavoro</strong><span>Regione Siciliana · Welfare</span></div><a class="open" href="https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-famiglia-politiche-sociali-lavoro">Apri</a></li>
+      <li><div class="source-main"><strong>Distretti socio-sanitari</strong><span>Regione Siciliana · Welfare</span></div><a class="open" href="https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-famiglia-politiche-sociali-lavoro/dipartimento-famiglia-politiche-sociali/dss">Apri</a></li>
+      <li><div class="source-main"><strong>U.O. Interventi per anziani</strong><span>Comune di Palermo · Anziani</span></div><a class="open" href="https://www.comune.palermo.it/amministrazione/unita_organizzativa/uo-interventi-per-anziani/">Apri</a></li>
+      <li><div class="source-main"><strong>Servizi Sociali</strong><span>Comune di Trapani · Welfare</span></div><a class="open" href="https://comune.trapani.it/unita_organizzativa/servizi-sociali/">Apri</a></li>
+      <li><div class="source-main"><strong>Distretto socio-sanitario 50</strong><span>Comune di Trapani · Welfare</span></div><a class="open" href="https://comune.trapani.it/unita_organizzativa/distretto-socio-sanitario-50/">Apri</a></li>
+      <li><div class="source-main"><strong>Popolazione residente</strong><span>ISTAT · Demografia</span></div><a class="open" href="https://demo.istat.it/app/?+i=POS&l=it">Apri</a></li>
+      <li><div class="source-main"><strong>Legge quadro n. 328/2000</strong><span>Gazzetta Ufficiale · Welfare</span></div><a class="open" href="https://www.gazzettaufficiale.it/eli/id/2000/11/13/000G0369/s">Apri</a></li>
+    </ul>
+
+    <p class="use">Questa pagina è una vista di consultazione. Per aggiungere o aggiornare dati, usa il file Excel/Google Sheets della dashboard.</p>
+    <nav class="links" aria-label="Fonti principali">
+      <a href="https://www.pensionati.cisl.it/fnp-cisl">FNP CISL</a>
+      <a href="https://www.inps.it/">INPS</a>
+      <a href="https://www.istat.it/">ISTAT</a>
+      <a href="https://www.regione.sicilia.it/">Regione Siciliana</a>
+    </nav>
+  </main>
+</body>
+</html>
